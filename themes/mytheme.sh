@@ -27,8 +27,8 @@ if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
 		#"hostname 33 0" \
 		"date 232 255" \
 		#"time 43 232"   \
-		"weather 56 255 " \
-		"ifstat 30 232" \
+		"weather 232 255 " \
+		"ifstat 199 255" \
 		#"ifstat_sys 30 255" \
 		#"lan_ip 234 136" \
 		#"wan_ip 24 255" \
@@ -50,7 +50,7 @@ if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
 		"now_playing 56 255" \
 		#"tmux_mem_cpu_load 18 255" \
 		"rainbarf 232 123" \
-		"battery 232 55" \
+		"battery 56 255" \
 		#"xkb_layout 125 117" \
 		#"date_day 235 136" \
 		#"date 208 232" \
