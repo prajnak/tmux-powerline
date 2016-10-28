@@ -7,7 +7,13 @@ run_segment() {
 	fi
 
     # Customize via ~/.rainbarf.conf
-	stats=$(rainbarf --tmux)
+    #green: free memory;
+    #yellow: active memory;
+    #blue: inactive memory;
+    #red: wired memory on Mac OS X / FreeBSD; "unaccounted" memory on Linux;
+    #cyan: cached memory on Linux, buf on FreeBSD.
+    #magenta: used swap memory.
+	stats=$(rainbarf --rgb --remaining)
 	if [ -n "$stats" ]; then
 		echo "$stats";
 	fi
